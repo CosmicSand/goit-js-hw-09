@@ -1,10 +1,10 @@
 'use stict';
 
 const form = document.querySelector('.feedback-form');
-form.addEventListener('input', event => {
+
+form.addEventListener('input', () => {
   const email = form.elements.email.value;
   const message = form.elements.message.value;
-
   const data = {
     email,
     message,
@@ -19,8 +19,10 @@ if (localStorage.getItem('feedback-form-state')) {
 }
 form.addEventListener('submit', event => {
   event.preventDefault();
-  const storedData = JSON.parse(localStorage.getItem('feedback-form-state'));
-  console.log(storedData);
-  localStorage.removeItem('feedback-form-state');
-  form.reset();
+  if (form.elements.email.value && form.elements.message.value) {
+    const storedData = JSON.parse(localStorage.getItem('feedback-form-state'));
+    console.log(storedData);
+    localStorage.removeItem('feedback-form-state');
+    form.reset();
+  }
 });
