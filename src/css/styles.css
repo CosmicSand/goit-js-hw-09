@@ -151,6 +151,6 @@ a {
 .feedback-form button:hover {
   background-color: #6c8cff;
 }
-.lightbox {
+.lightbox-on {
   background-color: rgba(46, 47, 66, 0.8);
 }
