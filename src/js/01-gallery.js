@@ -94,8 +94,7 @@ import SimpleLightbox from 'simplelightbox';
 // Додатковий імпорт стилів
 import 'simplelightbox/dist/simple-lightbox.min.css';
 
-let lightbox = new SimpleLightbox('.gallery a', {
-  overlayOpacity: 0.8,
+const lightbox = new SimpleLightbox('.gallery a', {
   captionsData: 'alt',
   captionDelay: 250,
 });
