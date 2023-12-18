@@ -7,5 +7,5 @@ import"./assets/modulepreload-polyfill-ec808ebb.js";/* empty css                
       alt="${t}"
     />
   </a>
-</li>`;c.insertAdjacentHTML("beforeend",e)})}n();new p(".gallery a",{captionsData:"alt",captionDelay:250,fadeSpeed:150,className:"lightbox-on",closeText:'<svg class="icon" width="32" height="32" aria-label="close icon"><use href="./img/svg/icons.svg#close"></use>/svg>',navText:['<svg class="icon" width="24" height="24" aria-label="to the left icon"><use href="./img/svg/icons.svg#chevron-left""></use>/svg>','<svg class="icon" width="24" height="24" aria-label="to the rigth icon"><use href="./img/svg/icons.svg#chevron-right"></use>/svg>']});
+</li>`;c.insertAdjacentHTML("beforeend",e)})}n();new p(".gallery a",{captionsData:"alt",captionDelay:250,fadeSpeed:150,className:"lightbox-on",closeText:'<svg class="icon" width="32" height="32" aria-label="close icon"><use href="./img/svg/icons.svg#close"></use>/svg>',navText:['<svg class="icon" width="24" height="24" aria-label="to the left icon"><use href="./img/svg/icons.svg#chevron-left"></use>/svg>','<svg class="icon" width="24" height="24" aria-label="to the rigth icon"><use href="./img/svg/icons.svg#chevron-right"></use>/svg>']});
 //# sourceMappingURL=commonHelpers.js.map
