@@ -19,7 +19,9 @@ if (localStorage.getItem('feedback-form-state')) {
 }
 form.addEventListener('submit', event => {
   event.preventDefault();
-  if (form.elements.email.value && form.elements.message.value) {
+  if (!form.elements.email.value || !form.elements.message.value) {
+    alert('Please fill in all the fields!');
+  } else {
     const storedData = JSON.parse(localStorage.getItem('feedback-form-state'));
     console.log(storedData);
     localStorage.removeItem('feedback-form-state');
