@@ -7,5 +7,5 @@ import"./assets/modulepreload-polyfill-ec808ebb.js";/* empty css                
       alt="${a}"
     />
   </a>
-</li>`;c.insertAdjacentHTML("beforeend",e)})}s();let l=new p(".gallery a",{captionsData:"alt",captionDelay:250,fadeSpeed:150,className:"lightbox-on"});l.on("shown.simplelightbox",()=>{const o=document.querySelector(".sl-close");o.style.color="#fff",o.innerHTML='<svg class="icon" width="32" height="32"><use href="./img/icons.svg#close"></use></svg>',document.querySelectorAll(".sl-prev, .sl-next").forEach(t=>{t.style.color="#fff"})});
+</li>`;c.insertAdjacentHTML("beforeend",e)})}s();let l=new p(".gallery a",{captionsData:"alt",captionDelay:250,fadeSpeed:150,className:"lightbox-on"});l.on("shown.simplelightbox",()=>{const o=document.querySelector(".sl-close");o.style.color="#fff",o.innerHTML='<svg class="icon" width="32" height="32"><use href="./src/img/icons.svg#close"></use></svg>',document.querySelectorAll(".sl-prev, .sl-next").forEach(t=>{t.style.color="#fff"})});
 //# sourceMappingURL=commonHelpers.js.map
