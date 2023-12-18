@@ -93,15 +93,17 @@ function galleryCreation() {
 
 galleryCreation();
 
-const lightbox = new SimpleLightbox('.gallery a', {
+let lightbox = new SimpleLightbox('.gallery a', {
   captionsData: 'alt',
   captionDelay: 250,
   fadeSpeed: 150,
   className: 'lightbox-on',
-  closeText:
-    '<svg class="icon" width="32" height="32" aria-label="close icon"><use href="../src/img/icons.svg#close"></use>/svg>',
-  navText: [
-    '<svg class="icon" width="24" height="24" aria-label="to the left icon"><use href="./img/icons.svg#chevron-left"></use>/svg>',
-    '<svg class="icon" width="24" height="24" aria-label="to the rigth icon"><use href="./img/icons.svg#chevron-right"></use>/svg>',
-  ],
+});
+lightbox.on('shown.simplelightbox', () => {
+  const closeBtn = document.querySelector('.sl-close');
+  closeBtn.style.color = '#fff';
+  const navBtn = document.querySelectorAll('.sl-prev, .sl-next');
+  navBtn.forEach(el => {
+    el.style.color = '#fff';
+  });
 });
