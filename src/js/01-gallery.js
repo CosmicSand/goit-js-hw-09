@@ -103,7 +103,7 @@ lightbox.on('shown.simplelightbox', () => {
   const closeBtn = document.querySelector('.sl-close');
   closeBtn.style.color = '#fff';
   closeBtn.innerHTML =
-    '<svg class="icon" width="32" height="32"><use href="./img/icons.svg#close"></use></svg>';
+    '<svg class="icon" width="32" height="32"><use href="./src/img/icons.svg#close"></use></svg>';
   const navBtn = document.querySelectorAll('.sl-prev, .sl-next');
   navBtn.forEach(el => {
     el.style.color = '#fff';
