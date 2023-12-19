@@ -93,18 +93,29 @@ function galleryCreation() {
 
 galleryCreation();
 
+const leftArrow = new URL('../img/icons.svg#chevron-left', import.meta.url)
+  .href;
+const rightArrow = new URL('../img/icons.svg#chevron-right', import.meta.url)
+  .href;
+const closeIcon = new URL('../img/icons.svg#close', import.meta.url).href;
+
 let lightbox = new SimpleLightbox('.gallery a', {
   captionsData: 'alt',
   captionDelay: 250,
   fadeSpeed: 150,
   className: 'lightbox-on',
+  closeText: `<svg class="icon" height="32" width="32"><use href="${closeIcon}"></use></svg>`,
+  navText: [
+    `<svg class="icon" height="24" width="24"><use href="${leftArrow}"></use></svg>`,
+    `<svg class="icon" height="24" width="24"><use href="${rightArrow}"></use></svg>`,
+  ],
 });
-lightbox.on('shown.simplelightbox', () => {
-  const closeBtn = document.querySelector('.sl-close');
-  closeBtn.style.color = '#fff';
+// lightbox.on('shown.simplelightbox', () => {
+//   const closeBtn = document.querySelector('.sl-close');
+//   closeBtn.style.color = '#fff';
 
-  const navBtn = document.querySelectorAll('.sl-prev, .sl-next');
-  navBtn.forEach(el => {
-    el.style.color = '#fff';
-  });
-});
+//   const navBtns = document.querySelectorAll('.sl-prev, .sl-next');
+//   navBtns.forEach(el => {
+//     el.style.color = '#fff';
+//   });
+// });
