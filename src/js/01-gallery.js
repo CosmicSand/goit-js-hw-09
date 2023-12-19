@@ -1,4 +1,3 @@
-'use stict';
 // Описаний в документації
 import SimpleLightbox from 'simplelightbox';
 // Додатковий імпорт стилів
@@ -93,11 +92,13 @@ function galleryCreation() {
 
 galleryCreation();
 
-const leftArrow = new URL('../img/icons.svg#chevron-left', import.meta.url)
+const leftArrow = new URL('../img/svg/icons.svg#chevron-left', import.meta.url)
   .href;
-const rightArrow = new URL('../img/icons.svg#chevron-right', import.meta.url)
-  .href;
-const closeIcon = new URL('../img/icons.svg#close', import.meta.url).href;
+const rightArrow = new URL(
+  '../img/svg/icons.svg#chevron-right',
+  import.meta.url
+).href;
+const closeIcon = new URL('../img/svg/icons.svg#close', import.meta.url).href;
 
 let lightbox = new SimpleLightbox('.gallery a', {
   captionsData: 'alt',
