@@ -105,7 +105,6 @@ const closeIcon = new URL('../img/svg/icons.svg#close', import.meta.url).href;
 let lightbox = new SimpleLightbox('.gallery a', {
   captionsData: 'alt',
   captionDelay: 250,
-  fadeSpeed: 150,
   className: 'lightbox-on',
   closeText: `<svg class="icon" height="32" width="32"><use href="${closeIcon}"></use></svg>`,
   navText: [
@@ -113,12 +112,3 @@ let lightbox = new SimpleLightbox('.gallery a', {
     `<svg class="icon" height="24" width="24"><use href="${rightArrow}"></use></svg>`,
   ],
 });
-// lightbox.on('shown.simplelightbox', () => {
-//   const closeBtn = document.querySelector('.sl-close');
-//   closeBtn.style.color = '#fff';
-
-//   const navBtns = document.querySelectorAll('.sl-prev, .sl-next');
-//   navBtns.forEach(el => {
-//     el.style.color = '#fff';
-//   });
-// });
