@@ -92,6 +92,8 @@ function galleryCreation() {
 
 galleryCreation();
 
+// ======================= Lightbox ===========================
+
 const leftArrow = new URL('../img/svg/icons.svg#chevron-left', import.meta.url)
   .href;
 const rightArrow = new URL(
