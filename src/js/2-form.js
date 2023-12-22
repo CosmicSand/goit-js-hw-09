@@ -18,8 +18,8 @@ if (localStorage.getItem('feedback-form-state')) {
 form.addEventListener('submit', event => {
   event.preventDefault();
   if (
-    !event.currentTarget.elements.email.value ||
-    !event.currentTarget.elements.message.value
+    !event.currentTarget.elements.email.value.trim() ||
+    !event.currentTarget.elements.message.value.trim()
   ) {
     alert('Please fill in all the fields!');
   } else {
